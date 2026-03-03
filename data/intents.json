@@ -1,0 +1,2945 @@
+{
+  "intents": [
+    {
+      "tag": "check_application_status",
+      "intent_id": 1,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What is my application status?",
+        "Check on my admission status.",
+        "Has my application been reviewed yet?",
+        "Where do I find out if I got in?",
+        "I want to know the status of my application."
+      ],
+      "responses": [
+        "You can check your application status on the official admissions portal. You will need your application ID and password to log in."
+      ]
+    },
+    {
+      "tag": "find_application_deadline",
+      "intent_id": 2,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "When is the application deadline?",
+        "What is the last day to apply for the fall semester?",
+        "Did I miss the deadline for applications?",
+        "Application due dates."
+      ],
+      "responses": [
+        "The application deadline for the upcoming semester is [Date]. Please check the admissions website for deadlines related to specific programs."
+      ]
+    },
+    {
+      "tag": "inquire_admission_requirements",
+      "intent_id": 3,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What are the admission requirements?",
+        "What do I need to apply?",
+        "List the requirements for the computer science program.",
+        "Am I eligible to apply?"
+      ],
+      "responses": [
+        "Admission requirements vary by program. Generally, you will need your high school transcripts, standardized test scores (like SAT/ACT), letters of recommendation, and a personal essay. Please visit the specific program page for detailed requirements."
+      ]
+    },
+    {
+      "tag": "ask_about_transfer_credits",
+      "intent_id": 4,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I transfer credits from another college?",
+        "Will my credits from my previous university transfer?",
+        "What is the policy on credit transfers?",
+        "Can I get my credits evaluated?"
+      ],
+      "responses": [
+        "We have a credit transfer evaluation process. You can find the details and the required forms on the Registrar's Office page on our website. Generally, credits for equivalent courses with a grade of C or better are accepted."
+      ]
+    },
+    {
+      "tag": "ask_about_application_fee",
+      "intent_id": 5,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How much is the application fee?",
+        "Is there a fee to apply?",
+        "Can I get an application fee waiver?",
+        "How do I pay the application fee?"
+      ],
+      "responses": [
+        "The standard application fee is [Amount]. Information about fee waivers for eligible candidates can be found on the admissions website."
+      ]
+    },
+    {
+      "tag": "schedule_campus_tour",
+      "intent_id": 6,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I'd like to schedule a campus tour.",
+        "Can I visit the campus?",
+        "Are there guided tours available?",
+        "How to book a campus visit?"
+      ],
+      "responses": [
+        "We'd love to show you around! You can schedule a campus tour by visiting our website's 'Visit Us' page. We offer both in-person and virtual tours."
+      ]
+    },
+    {
+      "tag": "submit_documents",
+      "intent_id": 7,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I submit my transcripts?",
+        "Where do I upload my documents?",
+        "Can I email my recommendation letters?",
+        "I need to submit a missing document."
+      ],
+      "responses": [
+        "All application documents should be uploaded directly through the admissions portal. Please do not email sensitive documents."
+      ]
+    },
+    {
+      "tag": "inquire_international_admissions",
+      "intent_id": 8,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What are the requirements for international students?",
+        "I am an international applicant, where do I start?",
+        "Do I need to take the TOEFL or IELTS?",
+        "Help with international admissions."
+      ],
+      "responses": [
+        "For our international applicants, we have a dedicated section on our website with information on visa requirements, English proficiency tests (TOEFL/IELTS), and credential evaluation. Please visit the International Admissions page."
+      ]
+    },
+    {
+      "tag": "ask_about_scholarships",
+      "intent_id": 9,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Are there any scholarships available for new students?",
+        "How can I apply for a scholarship?",
+        "What scholarships am I eligible for?",
+        "Tell me about financial aid and scholarships."
+      ],
+      "responses": [
+        "We offer a variety of merit-based and need-based scholarships. You can find a list of available scholarships and their application procedures on the Financial Aid Office website."
+      ]
+    },
+    {
+      "tag": "contact_admissions_office",
+      "intent_id": 10,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How can I contact the admissions office?",
+        "I need to speak with an admissions counselor.",
+        "What is the email for the admissions department?",
+        "Admissions office phone number."
+      ],
+      "responses": [
+        "You can contact the Admissions Office via email at admissions@university.edu or by phone at (123) 456-7890 during business hours."
+      ]
+    },
+    {
+      "tag": "accept_admission_offer",
+      "intent_id": 11,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I accept my admission offer?",
+        "I want to accept my offer of admission.",
+        "Where do I pay the enrollment deposit?",
+        "What's the next step after getting accepted?"
+      ],
+      "responses": [
+        "Congratulations on your acceptance! To secure your spot, please log in to the admissions portal, formally accept the offer, and pay the enrollment deposit by the deadline specified in your offer letter."
+      ]
+    },
+    {
+      "tag": "defer_admission",
+      "intent_id": 12,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Can I defer my admission to the next semester?",
+        "I need to postpone my start date.",
+        "What is the policy for deferring admission?",
+        "How to request an admission deferral."
+      ],
+      "responses": [
+        "Admission deferrals are considered on a case-by-case basis. Please submit a formal deferral request through the admissions portal, stating your reasons. The deadline for requests is [Date]."
+      ]
+    },
+    {
+      "tag": "inquire_about_waitlist",
+      "intent_id": 13,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I've been waitlisted. What does that mean?",
+        "What are my chances of getting off the waitlist?",
+        "When will I hear back about the waitlist?",
+        "How to improve my chances on the waitlist."
+      ],
+      "responses": [
+        "Being on the waitlist means you are a strong candidate, but we don't have enough space at the moment. We will notify waitlisted candidates of any updates as soon as they are available, typically by [Date]."
+      ]
+    },
+    {
+      "tag": "find_orientation_schedule",
+      "intent_id": 14,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "When is new student orientation?",
+        "What is the orientation schedule?",
+        "Is orientation mandatory?",
+        "How to register for student orientation."
+      ],
+      "responses": [
+        "The New Student Orientation schedule is available on the 'First Year Experience' website. Orientation is a crucial part of your transition, and attendance is highly recommended for all new students."
+      ]
+    },
+    {
+      "tag": "document_verification_status",
+      "intent_id": 15,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Have my documents been verified?",
+        "Check if my transcripts were received.",
+        "What's the status of my document verification?",
+        "Why are my documents still pending?"
+      ],
+      "responses": [
+        "You can see the status of all your submitted documents in the admissions portal. Verification can take up to 5-7 business days after submission."
+      ]
+    },
+    {
+      "tag": "ask_about_early_decision",
+      "intent_id": 16,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What is the early decision deadline?",
+        "How does early admission work?",
+        "Is the early decision binding?",
+        "Should I apply for early action?"
+      ],
+      "responses": [
+        "We offer both Early Decision (binding) and Early Action (non-binding) application plans. The deadline for both is [Date]. You can find more details about each plan on our admissions website."
+      ]
+    },
+    {
+      "tag": "get_application_form",
+      "intent_id": 17,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Where can I get the application form?",
+        "I need a link to the application.",
+        "How do I start my application?",
+        "Is the application online?"
+      ],
+      "responses": [
+        "Our application is available entirely online. You can start your application by creating an account on our admissions portal here: [Link]."
+      ]
+    },
+    {
+      "tag": "ask_about_program_specific_requirements",
+      "intent_id": 18,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Does the engineering program require a portfolio?",
+        "Are there special requirements for the nursing program?",
+        "What extra materials do I need for the art major?",
+        "Program-specific admission details."
+      ],
+      "responses": [
+        "Yes, some programs have additional requirements such as portfolios, auditions, or specific prerequisite courses. Please visit the webpage for the specific department you are interested in for these details."
+      ]
+    },
+    {
+      "tag": "check_test_score_receipt",
+      "intent_id": 19,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Did you receive my SAT scores?",
+        "Have my TOEFL scores been submitted?",
+        "Confirm receipt of my test scores.",
+        "How do I send my test scores to the university?"
+      ],
+      "responses": [
+        "Test scores must be sent directly from the testing agency (e.g., College Board, ETS). Once received, they will be reflected in your application portal, which can take a couple of weeks."
+      ]
+    },
+    {
+      "tag": "ask_about_reapplication",
+      "intent_id": 20,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I was not accepted. Can I reapply?",
+        "What is the process for reapplying?",
+        "If I reapply, do I need to submit everything again?",
+        "How to strengthen my application for next year."
+      ],
+      "responses": [
+        "Yes, you are welcome to reapply for a future term. You will need to submit a new application. We recommend highlighting any new achievements or experiences since your last application."
+      ]
+    },
+    {
+      "tag": "inquire_about_visa_process",
+      "intent_id": 21,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I get a student visa?",
+        "What documents do I need for my F-1 visa?",
+        "When will I receive my I-20 form?",
+        "Help with the visa application process."
+      ],
+      "responses": [
+        "Once you have accepted your offer of admission and provided proof of funding, our International Student Office will issue your I-20 form. This form is required to apply for your F-1 student visa at a U.S. embassy or consulate."
+      ]
+    },
+    {
+      "tag": "find_enrollment_counselor",
+      "intent_id": 22,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Who is my enrollment counselor?",
+        "How can I speak to someone about my application?",
+        "I need to find the admissions representative for my region.",
+        "Can I schedule a meeting with an admissions officer?"
+      ],
+      "responses": [
+        "We assign an enrollment counselor based on your geographic region. You can find your designated counselor and their contact information on the 'Meet Your Counselor' page on our website."
+      ]
+    },
+    {
+      "tag": "ask_about_ap_ib_credits",
+      "intent_id": 23,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Do you accept AP credits?",
+        "What score do I need on my IB exam for credit?",
+        "How do AP/IB credits transfer?",
+        "Where to send my AP scores."
+      ],
+      "responses": [
+        "Yes, we award credit for qualifying scores on AP and IB exams. A detailed chart showing the required scores and credit awarded for each exam is available on the Registrar's website."
+      ]
+    },
+    {
+      "tag": "ask_about_housing_for_new_students",
+      "intent_id": 24,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I apply for housing as a new student?",
+        "When does the housing application open for freshmen?",
+        "Is housing guaranteed for first-year students?",
+        "Tell me about the dorms for new students."
+      ],
+      "responses": [
+        "Housing is guaranteed for all first-year students who apply by the deadline. The housing application will become available in your student portal after you have submitted your enrollment deposit. More information can be found on the Residential Life website."
+      ]
+    },
+    {
+      "tag": "inquire_about_placement_tests",
+      "intent_id": 25,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Do I need to take a math placement test?",
+        "What are placement exams?",
+        "How do I sign up for placement testing?",
+        "Where can I find information about language placement tests?"
+      ],
+      "responses": [
+        "Some students may be required to take placement tests in subjects like Math, English, or a foreign language to ensure proper course placement. Information on who needs to test and how to register is available on the Testing Center's website."
+      ]
+    },
+    {
+      "tag": "ask_about_major_declaration_for_new_students",
+      "intent_id": 26,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Do I have to declare my major when I apply?",
+        "Can I apply as an undeclared major?",
+        "How do I choose a major?",
+        "When do I need to declare my major?"
+      ],
+      "responses": [
+        "You can apply as an 'Undeclared' major. You will have until the end of your sophomore year to formally declare your major, giving you plenty of time to explore your interests."
+      ]
+    },
+    {
+      "tag": "check_letter_of_recommendation_status",
+      "intent_id": 27,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Has my recommender submitted their letter?",
+        "Did you receive my letter of recommendation?",
+        "How can I check the status of my recommendations?",
+        "My professor is having trouble submitting the letter."
+      ],
+      "responses": [
+        "You can check the status of your letters of recommendation in your application portal. You can also resend the request to your recommender from the portal if needed."
+      ]
+    },
+    {
+      "tag": "withdraw_application",
+      "intent_id": 28,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I withdraw my application?",
+        "I would like to cancel my application.",
+        "I've decided to attend another university, how do I withdraw?",
+        "Withdrawal process for an application."
+      ],
+      "responses": [
+        "To withdraw your application, please log in to the application portal and select the 'Withdraw Application' option. We're sorry to see you go and wish you the best in your future endeavors."
+      ]
+    },
+    {
+      "tag": "ask_about_campus_safety",
+      "intent_id": 29,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How safe is the campus?",
+        "Tell me about campus security.",
+        "What are the safety measures in place for students?",
+        "Where can I find crime statistics for the university?"
+      ],
+      "responses": [
+        "The safety of our students is our top priority. Our campus is monitored by a dedicated Campus Safety department 24/7. You can view the Annual Security Report and crime statistics on the Campus Safety website."
+      ]
+    },
+    {
+      "tag": "inquire_about_specific_department",
+      "intent_id": 30,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Can I talk to someone from the biology department?",
+        "How do I contact the College of Engineering?",
+        "I have a question for the business school.",
+        "Who is the head of the psychology department?"
+      ],
+      "responses": [
+        "Contact information for all academic departments, including department heads and administrative staff, can be found in the university directory on our website."
+      ]
+    },
+    {
+      "tag": "ask_about_financial_aid_for_admitted_students",
+      "intent_id": 31,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I've been admitted, where can I see my financial aid package?",
+        "How do I accept my financial aid award?",
+        "What is the deadline to accept my scholarships?",
+        "Understanding my financial aid offer."
+      ],
+      "responses": [
+        "Congratulations! Your financial aid award letter is available in your student portal. Please review it carefully and accept or decline each award by the deadline listed. The Financial Aid Office has resources to help you understand your package."
+      ]
+    },
+    {
+      "tag": "ask_about_health_forms",
+      "intent_id": 32,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What health forms do I need to submit before I enroll?",
+        "Where do I submit my immunization records?",
+        "Is there a deadline for health forms?",
+        "Required vaccinations for new students."
+      ],
+      "responses": [
+        "All new students must submit a completed health form and immunization records to the Student Health Center before the start of classes. You can download the forms and see the deadline on the Health Center's website."
+      ]
+    },
+    {
+      "tag": "inquire_about_class_size",
+      "intent_id": 33,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What is the average class size?",
+        "How big are the introductory classes?",
+        "What is the student-to-faculty ratio?",
+        "Tell me about class sizes for my major."
+      ],
+      "responses": [
+        "Our average class size is [Number], and our student-to-faculty ratio is [Ratio]. While some introductory lectures may be larger, most upper-level classes are much smaller to foster close interaction with faculty."
+      ]
+    },
+    {
+      "tag": "ask_about_disability_services_for_new_students",
+      "intent_id": 34,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I have a disability, how do I set up accommodations?",
+        "How do I register with the disability services office as a new student?",
+        "I need to arrange for accommodations before the semester starts.",
+        "What documentation do I need for disability services?"
+      ],
+      "responses": [
+        "We encourage you to connect with the Disability Services office as early as possible to arrange for accommodations. You can find information on the registration process and required documentation on their website."
+      ]
+    },
+    {
+      "tag": "check_final_transcript_receipt",
+      "intent_id": 35,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Did you receive my final high school transcript?",
+        "How do I confirm you got my final grades?",
+        "When do I need to submit my final transcript?",
+        "I have a hold on my account for a final transcript."
+      ],
+      "responses": [
+        "Your final, official transcript must be received by [Date]. You can check its status on your student portal. A hold will be placed on your account preventing registration if it is not received on time."
+      ]
+    },
+    {
+      "tag": "ask_about_gap_year_policy",
+      "intent_id": 36,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Can I take a gap year after being admitted?",
+        "What is the policy for taking a year off before starting college?",
+        "How do I request a gap year?",
+        "Deferring enrollment for a year."
+      ],
+      "responses": [
+        "Yes, admitted students can request to defer their enrollment for one year to take a gap year. You must first accept your offer of admission and then submit a formal deferral request outlining your plans for the year."
+      ]
+    },
+    {
+      "tag": "inquire_about_student_diversity",
+      "intent_id": 37,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What are the diversity statistics of the student body?",
+        "Tell me about the diversity and inclusion initiatives on campus.",
+        "What is the demographic breakdown of the university?",
+        "Are there resources for underrepresented students?"
+      ],
+      "responses": [
+        "We are proud of our diverse student community. You can find detailed demographic statistics on the Office of Institutional Research website. Our Diversity and Inclusion Office also provides extensive resources and support for students from all backgrounds."
+      ]
+    },
+    {
+      "tag": "ask_about_student_outcomes",
+      "intent_id": 38,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What is the job placement rate for graduates?",
+        "Where do graduates from this university end up working?",
+        "What is the graduation rate?",
+        "Tell me about student success after graduation."
+      ],
+      "responses": [
+        "We have strong student outcomes. Our [e.g., four-year] graduation rate is [Percentage], and [Percentage] of graduates are employed or in graduate school within six months of graduation. You can find more detailed reports on the Career Services website."
+      ]
+    },
+    {
+      "tag": "find_admissions_event_schedule",
+      "intent_id": 39,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Are there any open house events for prospective students?",
+        "When is the next admitted students day?",
+        "Can I attend a virtual information session?",
+        "Calendar of admissions events."
+      ],
+      "responses": [
+        "We host a variety of events for prospective and admitted students, both on-campus and virtually. You can find a full schedule and register for events on the Admissions website under the 'Visit' or 'Events' section."
+      ]
+    },
+    {
+      "tag": "ask_about_dual_degree_programs",
+      "intent_id": 40,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Does the university offer dual degree programs?",
+        "Can I get a bachelor's and a master's degree at the same time?",
+        "How do I apply for a combined degree program?",
+        "Information on 4+1 master's programs."
+      ],
+      "responses": [
+        "Yes, we offer several accelerated and dual degree programs, including popular 4+1 options that allow you to earn a master's degree in just one additional year. You can find a list of these programs and their specific admission requirements on the university website."
+      ]
+    },
+    {
+      "tag": "inquire_about_research_opportunities_for_undergrads",
+      "intent_id": 41,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Can undergrads do research with professors?",
+        "How can I get involved in research as a freshman?",
+        "Tell me about undergraduate research opportunities.",
+        "Are there research programs for students?"
+      ],
+      "responses": [
+        "Absolutely! We strongly encourage undergraduate research. Many students begin working with faculty on research projects as early as their first or second year. The Office of Undergraduate Research can help you find opportunities and funding."
+      ]
+    },
+    {
+      "tag": "contact_current_student",
+      "intent_id": 42,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Can I talk to a current student about their experience?",
+        "How can I connect with a student in my intended major?",
+        "I want to ask a student some questions.",
+        "Is there a way to chat with a student ambassador?"
+      ],
+      "responses": [
+        "Yes, we'd be happy to connect you with one of our student ambassadors. You can often find a 'Chat with a Student' feature on the admissions website, or you can request to be connected by contacting your admissions counselor."
+      ]
+    },
+    {
+      "tag": "ask_about_transportation_to_campus",
+      "intent_id": 43,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I get to campus from the airport?",
+        "Is there public transportation to the university?",
+        "What is the closest train station or bus stop?",
+        "Directions to campus."
+      ],
+      "responses": [
+        "The university is accessible by various means of transportation. You can find detailed directions for driving, as well as information on local public transit options and airport shuttles, on the 'Maps & Directions' page on our website."
+      ]
+    },
+    {
+      "tag": "find_college_ranking",
+      "intent_id": 44,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What is the university's ranking?",
+        "How does the business program rank nationally?",
+        "Where can I find information about your rankings?",
+        "Tell me about your accreditations and rankings."
+      ],
+      "responses": [
+        "Our university is proud to be recognized for academic excellence. You can find information about our latest national and program-specific rankings, as well as our accreditations, on the 'About Us' section of our website."
+      ]
+    },
+    {
+      "tag": "inquire_about_student_life",
+      "intent_id": 45,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "What is student life like on campus?",
+        "What do students do for fun?",
+        "Tell me about the campus culture.",
+        "Is this a commuter school or a residential campus?"
+      ],
+      "responses": [
+        "We have a vibrant and active campus community with over [Number] student clubs and organizations. From athletics and arts to community service and cultural events, there's always something happening. Most of our students live on or near campus, creating a lively residential experience."
+      ]
+    },
+    {
+      "tag": "ask_about_parent_resources",
+      "intent_id": 46,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I'm a parent, where can I find information?",
+        "Are there resources for parents of new students?",
+        "Is there a parents' orientation or family weekend?",
+        "How can I stay informed as a parent?"
+      ],
+      "responses": [
+        "We have a dedicated 'Parents & Families' section on our website with resources, FAQs, and important dates. We also host a Family Weekend each fall and have a parent newsletter you can sign up for to stay connected."
+      ]
+    },
+    {
+      "tag": "confirm_enrollment",
+      "intent_id": 47,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "How do I confirm my enrollment?",
+        "I've paid my deposit, am I enrolled?",
+        "What are the steps to finalize my enrollment?",
+        "Check my enrollment confirmation status."
+      ],
+      "responses": [
+        "After you pay your enrollment deposit, your spot is secured. The next steps involve registering for orientation, submitting health forms, and applying for housing. You will receive emails guiding you through this process."
+      ]
+    },
+    {
+      "tag": "ask_about_veteran_admissions",
+      "intent_id": 48,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I am a veteran, how do I apply?",
+        "Are there resources for student veterans?",
+        "How do I use my GI Bill benefits?",
+        "Information for military-affiliated students."
+      ],
+      "responses": [
+        "We are proud to support our student veterans. We have a dedicated Veterans Resource Center that can assist you with the admissions process, using your educational benefits, and connecting with the veteran community on campus."
+      ]
+    },
+    {
+      "tag": "find_next_steps_for_admitted_students",
+      "intent_id": 49,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "I've been admitted. What do I do next?",
+        "Is there a checklist for new students?",
+        "What are the next steps after accepting my offer?",
+        "Show me the admitted student checklist."
+      ],
+      "responses": [
+        "Congratulations! There is an admitted student checklist in your portal to guide you through the next steps, which include paying your deposit, signing up for orientation, and completing your housing application. We will also email you with important reminders."
+      ]
+    },
+    {
+      "tag": "inquire_about_non_degree_programs",
+      "intent_id": 50,
+      "category": "Admissions & Enrollment",
+      "patterns": [
+        "Can I take a class without being a full-time student?",
+        "How do I apply as a non-degree seeking student?",
+        "Tell me about continuing education courses.",
+        "Can I audit a class?"
+      ],
+      "responses": [
+        "Yes, we offer options for non-degree seeking students through our School of Continuing and Professional Studies. You can find information about course offerings and the application process on their website."
+      ]
+    },
+    {
+      "tag": "find_course_catalog",
+      "intent_id": 51,
+      "category": "Academics",
+      "patterns": [
+        "Where can I find the course catalog?",
+        "Show me a list of all available courses.",
+        "I need the academic catalog for this year.",
+        "Browse courses."
+      ],
+      "responses": [
+        "The official course catalog is available on the Registrar's Office website. You can browse courses by department, level, or semester."
+      ]
+    },
+    {
+      "tag": "register_for_course",
+      "intent_id": 52,
+      "category": "Academics",
+      "patterns": [
+        "How do I register for classes?",
+        "I need to sign up for my courses.",
+        "Help with course registration.",
+        "When does course registration open?"
+      ],
+      "responses": [
+        "Course registration is done through the student portal. Registration dates are assigned based on your class standing and can be found under the 'Registration' tab in the portal."
+      ]
+    },
+    {
+      "tag": "drop_course",
+      "intent_id": 53,
+      "category": "Academics",
+      "patterns": [
+        "How do I drop a class?",
+        "I want to withdraw from a course.",
+        "What is the deadline to drop a course without a 'W' grade?",
+        "Where is the add/drop form?"
+      ],
+      "responses": [
+        "You can drop a course through the student portal during the add/drop period. The deadline for dropping a course without academic penalty is listed in the academic calendar."
+      ]
+    },
+    {
+      "tag": "check_grades",
+      "intent_id": 54,
+      "category": "Academics",
+      "patterns": [
+        "Where can I see my grades?",
+        "Show me my final grades for last semester.",
+        "How do I check my marks?",
+        "View my grade report."
+      ],
+      "responses": [
+        "You can view your official grades by logging into the student portal and navigating to the 'Academic Records' or 'Gradebook' section."
+      ]
+    },
+    {
+      "tag": "inquire_gpa",
+      "intent_id": 55,
+      "category": "Academics",
+      "patterns": [
+        "What's my current GPA?",
+        "How do I calculate my Grade Point Average?",
+        "Where can I find my GPA on the portal?",
+        "I need my cumulative GPA."
+      ],
+      "responses": [
+        "Your current and cumulative GPA are displayed on your unofficial transcript, which you can access through the student portal under 'Academic Records'."
+      ]
+    },
+    {
+      "tag": "find_assignment_deadline",
+      "intent_id": 56,
+      "category": "Academics",
+      "patterns": [
+        "When is my history essay due?",
+        "What's the submission deadline for the project?",
+        "Show me all upcoming assignment deadlines.",
+        "Due dates for my assignments."
+      ],
+      "responses": [
+        "You can find all your assignment deadlines in the syllabus for each course or on the course's page in the learning management system (LMS) like Canvas or Blackboard."
+      ]
+    },
+    {
+      "tag": "submit_assignment",
+      "intent_id": 57,
+      "category": "Academics",
+      "patterns": [
+        "How do I submit my assignment?",
+        "Where do I upload my paper?",
+        "Can I submit my assignment late?",
+        "Help with assignment submission on the portal."
+      ],
+      "responses": [
+        "Assignments are typically submitted through the online learning management system (LMS). Navigate to your course page and look for the 'Assignments' section. Policies on late submissions vary by professor and are outlined in the course syllabus."
+      ]
+    },
+    {
+      "tag": "find_exam_schedule",
+      "intent_id": 58,
+      "category": "Academics",
+      "patterns": [
+        "Where can I find the final exam schedule?",
+        "When is my midterm exam?",
+        "Show me the exam timetable.",
+        "Exam dates."
+      ],
+      "responses": [
+        "The official final exam schedule is published by the Registrar's Office each semester. You can find it on their website. Midterm exam dates are usually provided by your professor in the course syllabus."
+      ]
+    },
+    {
+      "tag": "get_transcript",
+      "intent_id": 59,
+      "category": "Academics",
+      "patterns": [
+        "How do I get a copy of my transcript?",
+        "I need my official transcript.",
+        "Can I view my unofficial transcript?",
+        "Request a transcript."
+      ],
+      "responses": [
+        "You can view your unofficial transcript for free on the student portal. To order an official transcript, please visit the National Student Clearinghouse or the Registrar's Office website. A fee applies for official transcripts."
+      ]
+    },
+    {
+      "tag": "contact_professor",
+      "intent_id": 60,
+      "category": "Academics",
+      "patterns": [
+        "How can I email my professor?",
+        "What are Professor Smith's office hours?",
+        "I need to contact my instructor.",
+        "Find the contact info for my math professor."
+      ],
+      "responses": [
+        "You can find your professor's contact information and office hours listed in the course syllabus and in the university's online directory."
+      ]
+    },
+    {
+      "tag": "declare_major",
+      "intent_id": 61,
+      "category": "Academics",
+      "patterns": [
+        "How do I declare my major?",
+        "I want to change my major.",
+        "What is the form for declaring a minor?",
+        "Deadline to declare a major."
+      ],
+      "responses": [
+        "To declare or change your major or minor, you need to fill out the 'Major/Minor Declaration' form, get it signed by the department head, and submit it to the Registrar's Office."
+      ]
+    },
+    {
+      "tag": "find_academic_advisor",
+      "intent_id": 62,
+      "category": "Academics",
+      "patterns": [
+        "Who is my academic advisor?",
+        "How can I schedule a meeting with my advisor?",
+        "I need to change my advisor.",
+        "Find my advisor's contact information."
+      ],
+      "responses": [
+        "Your assigned academic advisor is listed on your student portal homepage. You can typically schedule an appointment with them via email or through the advising office's scheduling system."
+      ]
+    },
+    {
+      "tag": "apply_for_graduation",
+      "intent_id": 63,
+      "category": "Academics",
+      "patterns": [
+        "How do I apply for graduation?",
+        "What is the deadline to apply to graduate?",
+        "I need the graduation application form.",
+        "Check my graduation status."
+      ],
+      "responses": [
+        "You must formally apply for graduation. The application and deadlines are available on the Registrar's Office website. Please ensure you have met all degree requirements before applying."
+      ]
+    },
+    {
+      "tag": "get_course_syllabus",
+      "intent_id": 64,
+      "category": "Academics",
+      "patterns": [
+        "Where can I find the syllabus for my class?",
+        "I need the syllabus for ENGL 101.",
+        "Can you show me the course outline?",
+        "Syllabus for my registered courses."
+      ],
+      "responses": [
+        "The syllabus for each course is provided by your professor, usually on the first day of class and on the course page in the online learning management system (LMS)."
+      ]
+    },
+    {
+      "tag": "check_degree_progress",
+      "intent_id": 65,
+      "category": "Academics",
+      "patterns": [
+        "How do I check my degree progress?",
+        "I need to run a degree audit.",
+        "What classes do I still need to take to graduate?",
+        "Am I on track to graduate?"
+      ],
+      "responses": [
+        "You can run a degree audit report through the student portal. This report will show you which degree requirements you have completed and which are still outstanding."
+      ]
+    },
+    {
+      "tag": "find_tutor",
+      "intent_id": 66,
+      "category": "Academics",
+      "patterns": [
+        "Where can I find a tutor for chemistry?",
+        "Is there a tutoring center on campus?",
+        "I need help with my math homework.",
+        "How to book a tutoring session."
+      ],
+      "responses": [
+        "The Academic Success Center offers free tutoring for a wide range of subjects. You can view their schedule and book an appointment on their website."
+      ]
+    },
+    {
+      "tag": "inquire_about_academic_probation",
+      "intent_id": 67,
+      "category": "Academics",
+      "patterns": [
+        "What does it mean to be on academic probation?",
+        "My GPA is below 2.0, what happens now?",
+        "How do I get off academic probation?",
+        "I received a warning about my academic standing."
+      ],
+      "responses": [
+        "Academic probation is a status for students whose cumulative GPA falls below 2.0. You should meet with your academic advisor immediately to create an academic improvement plan."
+      ]
+    },
+    {
+      "tag": "request_grade_recheck",
+      "intent_id": 68,
+      "category": "Academics",
+      "patterns": [
+        "I think there's an error in my grade.",
+        "How do I appeal a grade?",
+        "Can I ask for my exam to be regraded?",
+        "Process for disputing a final grade."
+      ],
+      "responses": [
+        "If you believe there is an error in your grade, the first step is to discuss it with your professor. If the issue is not resolved, you can file a formal grade appeal. The procedure is outlined in the student handbook."
+      ]
+    },
+    {
+      "tag": "find_library_hours",
+      "intent_id": 69,
+      "category": "Academics",
+      "patterns": [
+        "What are the library hours?",
+        "Is the library open on weekends?",
+        "How late is the library open during finals week?",
+        "Library opening times."
+      ],
+      "responses": [
+        "The library's hours vary during the semester and exam periods. You can find the most current hours of operation on the library's official website."
+      ]
+    },
+    {
+      "tag": "book_study_room",
+      "intent_id": 70,
+      "category": "Academics",
+      "patterns": [
+        "How do I book a study room in the library?",
+        "Can I reserve a group study room?",
+        "Are there any study rooms available now?",
+        "Library room booking."
+      ],
+      "responses": [
+        "You can book a group study room online through the library's website. Rooms can be reserved for up to 2 hours at a time."
+      ]
+    },
+    {
+      "tag": "find_prerequisites_for_course",
+      "intent_id": 71,
+      "category": "Academics",
+      "patterns": [
+        "What are the prerequisites for Advanced Calculus?",
+        "Do I need to take any classes before this one?",
+        "Check prerequisites for course CS250.",
+        "What's a corequisite?"
+      ],
+      "responses": [
+        "You can find the prerequisites and corequisites for any course by looking it up in the official course catalog. This information is also typically shown when you try to register for the course in the student portal."
+      ]
+    },
+    {
+      "tag": "understand_credit_hours",
+      "intent_id": 72,
+      "category": "Academics",
+      "patterns": [
+        "How many credits is a full-time student?",
+        "What is a credit hour?",
+        "What is the maximum number of credits I can take per semester?",
+        "How many credits do I need to graduate?"
+      ],
+      "responses": [
+        "A full-time undergraduate student is typically enrolled in 12 or more credit hours per semester. The total number of credits required for graduation varies by major but is usually around 120 credits. Specific details are in the academic catalog."
+      ]
+    },
+    {
+      "tag": "ask_about_plagiarism_policy",
+      "intent_id": 73,
+      "category": "Academics",
+      "patterns": [
+        "What is the university's policy on plagiarism?",
+        "What happens if you get caught plagiarizing?",
+        "Tell me about academic integrity.",
+        "How to avoid plagiarism."
+      ],
+      "responses": [
+        "The university has a strict policy on academic integrity, and plagiarism has serious consequences. The policy is detailed in the student handbook. The Writing Center also offers resources on how to properly cite sources and avoid plagiarism."
+      ]
+    },
+    {
+      "tag": "find_academic_calendar",
+      "intent_id": 74,
+      "category": "Academics",
+      "patterns": [
+        "Where is the academic calendar?",
+        "When does the semester start and end?",
+        "What are the key dates for this semester?",
+        "Show me the university calendar."
+      ],
+      "responses": [
+        "The official academic calendar, which includes key dates like the first day of classes, holidays, and exam periods, is available on the Registrar's Office website."
+      ]
+    },
+    {
+      "tag": "access_online_learning_platform",
+      "intent_id": 75,
+      "category": "Academics",
+      "patterns": [
+        "How do I log into Canvas?",
+        "Where can I find my online courses?",
+        "I can't access Blackboard.",
+        "Link to the learning management system."
+      ],
+      "responses": [
+        "You can access our online learning platform [e.g., Canvas, Blackboard] at [Link]. Use your university username and password to log in."
+      ]
+    },
+    {
+      "tag": "find_department_head",
+      "intent_id": 76,
+      "category": "Academics",
+      "patterns": [
+        "Who is the head of the History department?",
+        "I need to contact the dean of the science faculty.",
+        "Who is the chair of the English department?",
+        "Contact information for department chair."
+      ],
+      "responses": [
+        "You can find a list of all department heads, deans, and chairs, along with their contact information, in the university's online directory or on the specific department's website."
+      ]
+    },
+    {
+      "tag": "inquire_about_honors_program",
+      "intent_id": 77,
+      "category": "Academics",
+      "patterns": [
+        "How do I join the honors program?",
+        "What are the benefits of the honors college?",
+        "What are the requirements for the honors program?",
+        "Tell me about honors classes."
+      ],
+      "responses": [
+        "The Honors Program offers a challenging academic experience for high-achieving students. You can find information about eligibility, application procedures, and program benefits on the Honors Program website."
+      ]
+    },
+    {
+      "tag": "ask_about_study_abroad",
+      "intent_id": 78,
+      "category": "Academics",
+      "patterns": [
+        "How can I study abroad?",
+        "What study abroad programs are available?",
+        "I want to study in another country for a semester.",
+        "Information on international exchange programs."
+      ],
+      "responses": [
+        "The International Programs Office manages all study abroad and exchange programs. Visit their website to explore available programs, check eligibility requirements, and find application deadlines."
+      ]
+    },
+    {
+      "tag": "get_dean_list_info",
+      "intent_id": 79,
+      "category": "Academics",
+      "patterns": [
+        "How do I make the Dean's List?",
+        "What are the requirements for the Dean's List?",
+        "When is the Dean's List announced?",
+        "Am I on the Dean's List?"
+      ],
+      "responses": [
+        "To qualify for the Dean's List, a student must achieve a semester GPA of [e.g., 3.5 or higher] while carrying a full-time course load. The list is typically announced a few weeks after the end of each semester."
+      ]
+    },
+    {
+      "tag": "find_course_textbooks",
+      "intent_id": 80,
+      "category": "Academics",
+      "patterns": [
+        "What textbooks do I need for my classes?",
+        "Where can I find the booklist for my course?",
+        "How to buy textbooks?",
+        "Required reading for PSYCH 101."
+      ],
+      "responses": [
+        "You can find the required textbooks for your registered courses by visiting the online University Bookstore website and entering your course information. This information may also be listed in your course syllabus."
+      ]
+    },
+    {
+      "tag": "check_class_schedule",
+      "intent_id": 81,
+      "category": "Academics",
+      "patterns": [
+        "What is my class schedule?",
+        "Show me my timetable for this semester.",
+        "Where can I find my course schedule?",
+        "What classes do I have on Monday?"
+      ],
+      "responses": [
+        "You can view your current class schedule, including times and locations, on the student portal under the 'My Schedule' or 'Registration' tab."
+      ]
+    },
+    {
+      "tag": "request_course_overload",
+      "intent_id": 82,
+      "category": "Academics",
+      "patterns": [
+        "How can I take more than the maximum number of credits?",
+        "I need to request a course overload.",
+        "What is the form to take an extra class?",
+        "Can I register for 18 credits?"
+      ],
+      "responses": [
+        "To take more than the maximum allowed credits for a semester, you must submit a 'Course Overload' petition. This form requires approval from your academic advisor and is available on the Registrar's website."
+      ]
+    },
+    {
+      "tag": "find_course_location",
+      "intent_id": 83,
+      "category": "Academics",
+      "patterns": [
+        "Where is my biology class located?",
+        "What building is my lecture in?",
+        "I can't find room 304 in the Smith Hall.",
+        "Check my classroom location."
+      ],
+      "responses": [
+        "Your classroom locations are listed in your class schedule on the student portal. You can use the interactive campus map on the university website to find the specific building and room."
+      ]
+    },
+    {
+      "tag": "audit_a_course",
+      "intent_id": 84,
+      "category": "Academics",
+      "patterns": [
+        "Can I audit a class?",
+        "How do I sit in on a course without taking it for credit?",
+        "What is the process for auditing a course?",
+        "I want to audit a history lecture."
+      ],
+      "responses": [
+        "Yes, students may be able to audit courses with the permission of the instructor. You will need to complete a 'Course Audit' form, available from the Registrar's Office. Audited courses do not count toward degree requirements."
+      ]
+    },
+    {
+      "tag": "get_permission_to_enroll",
+      "intent_id": 85,
+      "category": "Academics",
+      "patterns": [
+        "A class I want to take is full. How can I get in?",
+        "How do I get an override for a course?",
+        "I need a permission number to register for a class.",
+        "The system says I need instructor permission to enroll."
+      ],
+      "responses": [
+        "If a course requires special permission to enroll (e.g., it's full or you're missing a prerequisite), you should contact the course instructor or the academic department directly. They may be able to provide you with a permission number or override."
+      ]
+    },
+    {
+      "tag": "inquire_about_independent_study",
+      "intent_id": 86,
+      "category": "Academics",
+      "patterns": [
+        "How can I do an independent study?",
+        "I want to do a research project for credit.",
+        "What is the process for an independent study course?",
+        "Can I create my own course with a professor?"
+      ],
+      "responses": [
+        "Independent study allows students to pursue a topic of interest under the guidance of a faculty member. To start, you should approach a professor in that field to discuss your idea. If they agree, you'll need to complete an 'Independent Study' proposal form from the Registrar's Office."
+      ]
+    },
+    {
+      "tag": "check_exam_room",
+      "intent_id": 87,
+      "category": "Academics",
+      "patterns": [
+        "Where is my final exam?",
+        "What room is my calculus exam in?",
+        "I need to find my exam location.",
+        "Check exam room details."
+      ],
+      "responses": [
+        "Your final exam locations are posted in the official final exam schedule on the Registrar's Office website. They will also typically be announced by your professor and may appear on your course's LMS page."
+      ]
+    },
+    {
+      "tag": "request_exam_accommodation",
+      "intent_id": 88,
+      "category": "Academics",
+      "patterns": [
+        "I need extra time on my exams.",
+        "How do I arrange for exam accommodations?",
+        "Where is the testing center for students with disabilities?",
+        "Can I take my exam in a quiet room?"
+      ],
+      "responses": [
+        "All exam accommodations are coordinated through the Disability Services office. Once you are registered with them, they will work with you and your professors to arrange for accommodations such as extended time or a reduced-distraction testing environment."
+      ]
+    },
+    {
+      "tag": "understand_pass_fail_option",
+      "intent_id": 89,
+      "category": "Academics",
+      "patterns": [
+        "Can I take a course pass/fail?",
+        "What is the deadline to change a class to pass/fail?",
+        "How does taking a class pass/fail affect my GPA?",
+        "Which courses can be taken pass/fail?"
+      ],
+      "responses": [
+        "Students are permitted to take a certain number of elective courses on a Pass/Fail basis. These courses do not impact your GPA. The deadline to elect the Pass/Fail option is listed in the academic calendar. Check the student handbook for specific rules and restrictions."
+      ]
+    },
+    {
+      "tag": "get_writing_center_help",
+      "intent_id": 90,
+      "category": "Academics",
+      "patterns": [
+        "I need help with my essay.",
+        "Where is the writing center?",
+        "How do I make an appointment at the writing center?",
+        "Can someone proofread my paper?"
+      ],
+      "responses": [
+        "The University Writing Center offers free one-on-one consultations to help you with any stage of the writing process. You can book an appointment online through their website. They are located in the main library."
+      ]
+    },
+    {
+      "tag": "check_waitlist_status",
+      "intent_id": 91,
+      "category": "Academics",
+      "patterns": [
+        "What is my position on the waitlist for this class?",
+        "How do I know if I got into a class from the waitlist?",
+        "Am I still on the waitlist for CHEM 101?",
+        "How does the course waitlist work?"
+      ],
+      "responses": [
+        "You can check your position on a course waitlist in the registration section of the student portal. If a spot opens up, you will typically be notified via your student email and will have a limited time (e.g., 24 hours) to register for the course."
+      ]
+    },
+    {
+      "tag": "inquire_about_internship_for_credit",
+      "intent_id": 92,
+      "category": "Academics",
+      "patterns": [
+        "Can I get academic credit for my internship?",
+        "How do I register my internship for credit?",
+        "What are the requirements for an internship to count for credit?",
+        "I need the internship for credit form."
+      ],
+      "responses": [
+        "Many academic departments offer the option to earn credit for an internship. You should speak with your academic advisor and the department's internship coordinator to see if your opportunity qualifies and to complete the necessary registration paperwork."
+      ]
+    },
+    {
+      "tag": "access_library_databases",
+      "intent_id": 93,
+      "category": "Academics",
+      "patterns": [
+        "How do I access the library's online databases?",
+        "I need to find academic articles for my research paper.",
+        "Where can I find JSTOR or other academic journals?",
+        "Help with library research."
+      ],
+      "responses": [
+        "You can access all of the library's online databases and academic journals through the library's website. If you are off-campus, you will be prompted to log in with your university username and password."
+      ]
+    },
+    {
+      "tag": "request_incomplete_grade",
+      "intent_id": 94,
+      "category": "Academics",
+      "patterns": [
+        "I can't finish my coursework this semester, can I get an incomplete?",
+        "How do I request an incomplete grade?",
+        "What are the rules for getting an 'I' grade?",
+        "I have a medical emergency and need an incomplete."
+      ],
+      "responses": [
+        "A grade of Incomplete ('I') may be granted in cases of a documented emergency that prevents you from completing the final coursework. You must discuss this with your professor and complete an 'Incomplete Grade Contract,' which outlines the work to be finished and the deadline."
+      ]
+    },
+    {
+      "tag": "find_graduation_honors_requirements",
+      "intent_id": 95,
+      "category": "Academics",
+      "patterns": [
+        "How do I graduate with honors?",
+        "What GPA do I need for Cum Laude?",
+        "What are the requirements for graduating Magna Cum Laude?",
+        "Tell me about Latin honors at graduation."
+      ],
+      "responses": [
+        "Graduation honors (Cum Laude, Magna Cum Laude, Summa Cum Laude) are awarded based on your final cumulative GPA. The specific GPA thresholds are listed in the academic catalog on the Registrar's website."
+      ]
+    },
+    {
+      "tag": "contact_registrar_office",
+      "intent_id": 96,
+      "category": "Academics",
+      "patterns": [
+        "How do I contact the Registrar's office?",
+        "I have a question about my academic record.",
+        "What are the Registrar's office hours?",
+        "Phone number for the registrar."
+      ],
+      "responses": [
+        "You can contact the Registrar's Office at (123) 555-0106 or registrar@university.edu. Their office is located in the main administration building, and their hours are posted on their website."
+      ]
+    },
+    {
+      "tag": "get_ferpa_information",
+      "intent_id": 97,
+      "category": "Academics",
+      "patterns": [
+        "What is FERPA?",
+        "How can I give my parents access to my grades?",
+        "I need to fill out a FERPA waiver.",
+        "Tell me about the privacy of my student records."
+      ],
+      "responses": [
+        "FERPA (Family Educational Rights and Privacy Act) is a federal law that protects the privacy of your student records. By default, only you can access them. If you wish to grant access to a parent or guardian, you must submit a FERPA Release Form, which is available on the Registrar's website."
+      ]
+    },
+    {
+      "tag": "find_course_evaluations",
+      "intent_id": 98,
+      "category": "Academics",
+      "patterns": [
+        "Where do I fill out my course evaluations?",
+        "When are course evaluations due?",
+        "How do I provide feedback on my classes and professors?",
+        "I need the link for end-of-semester surveys."
+      ],
+      "responses": [
+        "Course evaluations are a critical way to provide feedback. You will receive an email with a unique link to complete your evaluations near the end of the semester. Your responses are anonymous."
+      ]
+    },
+    {
+      "tag": "change_grading_basis",
+      "intent_id": 99,
+      "category": "Academics",
+      "patterns": [
+        "How do I change a class from a letter grade to pass/fail?",
+        "I want to change the grading option for one of my courses.",
+        "What is the deadline to change the grading basis?",
+        "Switching a class to audit status."
+      ],
+      "responses": [
+        "To change the grading basis of a course (e.g., from a letter grade to Pass/Fail or Audit), you must submit a 'Change of Grading Basis' form to the Registrar's Office before the deadline listed in the academic calendar."
+      ]
+    },
+    {
+      "tag": "inquire_about_double_major",
+      "intent_id": 100,
+      "category": "Academics",
+      "patterns": [
+        "Can I double major?",
+        "How do I add a second major?",
+        "What are the requirements for a double major?",
+        "I'm interested in majoring in two subjects."
+      ],
+      "responses": [
+        "Yes, many students choose to double major. You should meet with your academic advisor and an advisor from the second department to plan your coursework and complete the necessary declaration paperwork."
+      ]
+    },
+    {
+      "tag": "apply_for_housing",
+      "intent_id": 151,
+      "category": "Campus Life",
+      "patterns": [
+        "How do I apply for a dorm room?",
+        "Where is the housing application?",
+        "When is the deadline to apply for on-campus housing?",
+        "I need to apply for a hostel."
+      ],
+      "responses": [
+        "You can apply for on-campus housing through the Residential Life portal. The application for the upcoming academic year typically opens in [Month]."
+      ]
+    },
+    {
+      "tag": "report_housing_issue",
+      "intent_id": 152,
+      "category": "Campus Life",
+      "patterns": [
+        "My dorm room's AC is not working.",
+        "I need to file a maintenance request.",
+        "The sink in my bathroom is clogged.",
+        "How to report a problem in my dorm?"
+      ],
+      "responses": [
+        "To report a maintenance issue, please submit a work order through the housing portal. For emergencies like a burst pipe or power outage, please call the 24/7 maintenance hotline at (123) 555-0101."
+      ]
+    },
+    {
+      "tag": "check_meal_plan_balance",
+      "intent_id": 153,
+      "category": "Campus Life",
+      "patterns": [
+        "How many meal swipes do I have left?",
+        "What's the balance on my dining card?",
+        "Check my meal plan.",
+        "Where can I see my dining dollars?"
+      ],
+      "responses": [
+        "You can check your meal plan balance, including meal swipes and dining dollars, on the Dining Services website or by asking a cashier at any campus dining location."
+      ]
+    },
+    {
+      "tag": "find_dining_hall_hours",
+      "intent_id": 154,
+      "category": "Campus Life",
+      "patterns": [
+        "What time does the dining hall open?",
+        "Is the cafeteria open now?",
+        "What are the hours for the main dining hall on weekends?",
+        "Campus food service hours."
+      ],
+      "responses": [
+        "You can find the operating hours for all campus dining locations, including dining halls and cafes, on the Dining Services website or their mobile app."
+      ]
+    },
+    {
+      "tag": "find_student_clubs",
+      "intent_id": 155,
+      "category": "Campus Life",
+      "patterns": [
+        "What student clubs can I join?",
+        "Is there a list of student organizations?",
+        "I want to find the robotics club.",
+        "How to get involved in extracurricular activities?"
+      ],
+      "responses": [
+        "A complete list of all registered student clubs and organizations is available on the Student Activities website. You can also attend the student involvement fair at the beginning of each semester to learn more."
+      ]
+    },
+    {
+      "tag": "get_gym_hours",
+      "intent_id": 156,
+      "category": "Campus Life",
+      "patterns": [
+        "What are the gym's hours?",
+        "When does the campus recreation center close?",
+        "Is the gym open today?",
+        "Campus gym schedule."
+      ],
+      "responses": [
+        "The hours for the campus recreation center and gym are posted on the Campus Recreation website. Hours may vary during holidays and semester breaks."
+      ]
+    },
+    {
+      "tag": "find_campus_map",
+      "intent_id": 157,
+      "category": "Campus Life",
+      "patterns": [
+        "Where can I find a map of the campus?",
+        "I need a campus map.",
+        "How do I get to the science building?",
+        "Show me the university map."
+      ],
+      "responses": [
+        "An interactive campus map is available on the university's main website. You can use it to find buildings, parking lots, and other points of interest."
+      ]
+    },
+    {
+      "tag": "get_campus_parking_info",
+      "intent_id": 158,
+      "category": "Campus Life",
+      "patterns": [
+        "Where can I park on campus?",
+        "How do I get a parking permit?",
+        "Information about student parking.",
+        "Is parking free on weekends?"
+      ],
+      "responses": [
+        "Student parking information, including permit registration and parking zone maps, is available on the Parking and Transportation Services website. A permit is required to park on campus at all times."
+      ]
+    },
+    {
+      "tag": "find_laundry_facilities",
+      "intent_id": 159,
+      "category": "Campus Life",
+      "patterns": [
+        "Where are the laundry rooms in my dorm?",
+        "How do I pay for laundry?",
+        "Are the washers and dryers free?",
+        "Check the status of the laundry machines."
+      ],
+      "responses": [
+        "Laundry facilities are available in every residence hall. You can pay for laundry using your student ID card. Some halls have a system where you can check machine availability online."
+      ]
+    },
+    {
+      "tag": "report_lost_and_found",
+      "intent_id": 160,
+      "category": "Campus Life",
+      "patterns": [
+        "I lost my wallet on campus.",
+        "Where is the lost and found?",
+        "I found a student ID card, where should I take it?",
+        "How to report a lost item."
+      ],
+      "responses": [
+        "The central Lost and Found is located at the main Campus Safety office. You can report a lost item or turn in a found item there."
+      ]
+    },
+    {
+      "tag": "inquire_about_mail_services",
+      "intent_id": 161,
+      "category": "Campus Life",
+      "patterns": [
+        "How do I get my mail on campus?",
+        "Where is my campus mailbox?",
+        "What is my mailing address for the dorm?",
+        "When is the mailroom open?"
+      ],
+      "responses": [
+        "Students living on campus are assigned a mailbox. Your mailbox number and mailing address can be found in your housing portal. The campus mailroom is located in the Student Center, and its hours are posted on the Mail Services website."
+      ]
+    },
+    {
+      "tag": "change_meal_plan",
+      "intent_id": 162,
+      "category": "Campus Life",
+      "patterns": [
+        "How do I change my meal plan?",
+        "I want to upgrade my meal plan.",
+        "What is the deadline to change my meal plan?",
+        "Can I cancel my meal plan?"
+      ],
+      "responses": [
+        "You can request to change your meal plan during the first two weeks of the semester. The request form is available on the Dining Services website."
+      ]
+    },
+    {
+      "tag": "ask_about_roommate_policy",
+      "intent_id": 163,
+      "category": "Campus Life",
+      "patterns": [
+        "How are roommates assigned?",
+        "Can I request a roommate?",
+        "I'm having a problem with my roommate.",
+        "How to request a room change."
+      ],
+      "responses": [
+        "Roommate assignments are made based on the preferences you list in your housing application. If you have a specific person you'd like to room with, you can request them. If you are experiencing roommate conflicts, please contact your Resident Advisor (RA) for assistance."
+      ]
+    },
+    {
+      "tag": "find_campus_shuttle_schedule",
+      "intent_id": 164,
+      "category": "Campus Life",
+      "patterns": [
+        "Where can I find the bus schedule?",
+        "Does the campus shuttle run on weekends?",
+        "What time is the last shuttle?",
+        "Track the campus bus in real-time."
+      ],
+      "responses": [
+        "The campus shuttle schedule and a real-time bus tracker are available on the Transportation Services website or through their dedicated mobile app."
+      ]
+    },
+    {
+      "tag": "inquire_about_campus_jobs",
+      "intent_id": 165,
+      "category": "Campus Life",
+      "patterns": [
+        "Are there any jobs available on campus?",
+        "How do I find a student job?",
+        "I'm looking for a part-time job on campus.",
+        "Where to apply for campus jobs."
+      ],
+      "responses": [
+        "On-campus job opportunities for students are posted on the university's Career Services job board. You can search for openings and apply online."
+      ]
+    },
+    {
+      "tag": "ask_about_guest_policy",
+      "intent_id": 166,
+      "category": "Campus Life",
+      "patterns": [
+        "What is the guest policy for the dorms?",
+        "Can I have an overnight guest in my room?",
+        "How do I register a guest?",
+        "Are guests allowed in the residence halls?"
+      ],
+      "responses": [
+        "The guest policy for residence halls is outlined in the Residential Life handbook. Generally, overnight guests must be registered with your RA or the front desk. There may be limits on the number of nights a guest can stay."
+      ]
+    },
+    {
+      "tag": "find_religious_services_on_campus",
+      "intent_id": 167,
+      "category": "Campus Life",
+      "patterns": [
+        "Are there religious services on campus?",
+        "Is there a chapel or prayer room?",
+        "I'm looking for a student religious group.",
+        "Information on spiritual life."
+      ],
+      "responses": [
+        "The university supports a diverse range of spiritual and religious life activities. The Interfaith Center on campus provides spaces for worship and meditation. You can also find a list of student-led religious organizations on the Student Activities website."
+      ]
+    },
+    {
+      "tag": "get_info_on_sports_tickets",
+      "intent_id": 168,
+      "category": "Campus Life",
+      "patterns": [
+        "How do I get tickets for the football game?",
+        "Are student tickets free for sports events?",
+        "Where can I buy tickets for the basketball game?",
+        "Student section tickets."
+      ],
+      "responses": [
+        "Students typically get free or discounted tickets for home athletic events. You can claim your tickets through the Athletics Department website using your student ID."
+      ]
+    },
+    {
+      "tag": "join_intramural_sports",
+      "intent_id": 169,
+      "category": "Campus Life",
+      "patterns": [
+        "How do I sign up for intramural sports?",
+        "I want to join an intramural soccer team.",
+        "What intramural sports are offered?",
+        "Intramural registration deadline."
+      ],
+      "responses": [
+        "You can register for intramural sports as an individual or as a team on the Campus Recreation website. A list of sports offered and registration deadlines are available there."
+      ]
+    },
+    {
+      "tag": "ask_about_campus_events_calendar",
+      "intent_id": 170,
+      "category": "Campus Life",
+      "patterns": [
+        "What's happening on campus this week?",
+        "Is there a calendar of campus events?",
+        "Find upcoming student events.",
+        "Where can I see what's going on?"
+      ],
+      "responses": [
+        "The official campus events calendar is the best place to see everything happening, from lectures and workshops to concerts and festivals. You can find it on the university's homepage."
+      ]
+    },
+    {
+      "tag": "book_campus_venue",
+      "intent_id": 171,
+      "category": "Campus Life",
+      "patterns": [
+        "How can my club book a room for a meeting?",
+        "I need to reserve a space for an event.",
+        "How to book an auditorium on campus?",
+        "Venue reservation for student organizations."
+      ],
+      "responses": [
+        "Registered student organizations can book campus venues and meeting rooms through the Campus Reservations office. The request form and policies are available on their website."
+      ]
+    },
+    {
+      "tag": "inquire_about_bike_registration",
+      "intent_id": 172,
+      "category": "Campus Life",
+      "patterns": [
+        "Do I need to register my bike on campus?",
+        "How do I get a bike permit?",
+        "Where can I park my bike?",
+        "Stolen bike report."
+      ],
+      "responses": [
+        "We highly recommend registering your bike with Campus Safety. It's free and helps in recovery if it's ever stolen. You can find bike racks located near most academic buildings and residence halls."
+      ]
+    },
+    {
+      "tag": "ask_about_pet_policy",
+      "intent_id": 173,
+      "category": "Campus Life",
+      "patterns": [
+        "Are pets allowed in the dorms?",
+        "What is the pet policy on campus?",
+        "Can I have an emotional support animal in my room?",
+        "Rules for animals on campus."
+      ],
+      "responses": [
+        "Pets are generally not allowed in residence halls, with the exception of fish in small tanks. Service animals and approved emotional support animals are permitted. Please contact the Disability Services office for information on the approval process for support animals."
+      ]
+    },
+    {
+      "tag": "find_vending_machines",
+      "intent_id": 174,
+      "category": "Campus Life",
+      "patterns": [
+        "Where can I find a vending machine?",
+        "Are there any snack machines in the library?",
+        "I need a drink, where's the nearest soda machine?",
+        "Report a broken vending machine."
+      ],
+      "responses": [
+        "Vending machines with snacks and drinks are located in most academic buildings, residence halls, and the student center. If a machine is not working, please note the machine number and report it to the number listed on the machine."
+      ]
+    },
+    {
+      "tag": "get_information_on_volunteering",
+      "intent_id": 175,
+      "category": "Campus Life",
+      "patterns": [
+        "How can I find volunteer opportunities?",
+        "I want to do community service.",
+        "Are there any student volunteer groups?",
+        "Where to log my volunteer hours."
+      ],
+      "responses": [
+        "The Office of Civic Engagement and Service-Learning connects students with volunteer opportunities on and off campus. Visit their website to find current openings and learn about service-focused student organizations."
+      ]
+    },
+    {
+      "tag": "find_student_lounge",
+      "intent_id": 176,
+      "category": "Campus Life",
+      "patterns": [
+        "Where can I hang out between classes?",
+        "Are there student lounges on campus?",
+        "Where is the commuter student lounge?",
+        "Quiet place to relax on campus."
+      ],
+      "responses": [
+        "There are several student lounges for relaxing or studying located in the Student Center, the library, and within various academic buildings. The Commuter Student Lounge is on the second floor of the Student Center."
+      ]
+    },
+    {
+      "tag": "get_info_on_sustainability",
+      "intent_id": 177,
+      "category": "Campus Life",
+      "patterns": [
+        "What are the university's sustainability initiatives?",
+        "How can I get involved in green projects on campus?",
+        "Where are the recycling bins?",
+        "Tell me about campus sustainability."
+      ],
+      "responses": [
+        "The Office of Sustainability coordinates our campus-wide green initiatives. You can visit their website to learn about projects, find recycling locations, and join student environmental groups."
+      ]
+    },
+    {
+      "tag": "ask_about_student_government",
+      "intent_id": 178,
+      "category": "Campus Life",
+      "patterns": [
+        "How can I get involved with student government?",
+        "Who is the student body president?",
+        "When are student government elections?",
+        "I want to contact my student government representative."
+      ],
+      "responses": [
+        "The Student Government Association (SGA) represents the student body. You can find information about elections, meetings, and your representatives on the SGA website. All students are welcome to attend their public meetings."
+      ]
+    },
+    {
+      "tag": "find_art_and_culture_events",
+      "intent_id": 179,
+      "category": "Campus Life",
+      "patterns": [
+        "Are there any concerts or plays on campus?",
+        "Where is the campus art gallery?",
+        "I want to find out about music performances.",
+        "Schedule for the performing arts center."
+      ],
+      "responses": [
+        "Our campus has a vibrant arts scene! The Performing Arts Center hosts concerts, theater productions, and dance performances throughout the year. The schedule and ticket information are available on their website. The campus art gallery is located in the Fine Arts building."
+      ]
+    },
+    {
+      "tag": "get_info_about_traditions",
+      "intent_id": 180,
+      "category": "Campus Life",
+      "patterns": [
+        "What are the university's traditions?",
+        "Tell me about homecoming week.",
+        "What is the story behind the school mascot?",
+        "Campus traditions for students."
+      ],
+      "responses": [
+        "We have many beloved campus traditions, from the annual Homecoming parade to painting the [Campus Landmark]. You can read all about our history and traditions on the university website's 'About Us' section."
+      ]
+    },
+    {
+      "tag": "check_tuition_fee",
+      "intent_id": 251,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How much is tuition?",
+        "What are the fees for this semester?",
+        "Show me the cost of attendance.",
+        "Tuition and fees for an undergraduate student."
+      ],
+      "responses": [
+        "You can find a detailed breakdown of tuition and fees on the Bursar's Office (or Student Accounts) website. The rates vary based on your program, residency status, and number of credits."
+      ]
+    },
+    {
+      "tag": "get_payment_deadline",
+      "intent_id": 252,
+      "category": "Finance & Administration",
+      "patterns": [
+        "When is the tuition payment deadline?",
+        "What is the last day to pay my fees?",
+        "When is my bill due?",
+        "Fee payment due date."
+      ],
+      "responses": [
+        "The tuition payment deadline for the current semester is [Date]. You can view your specific due date and account balance on the student portal."
+      ]
+    },
+    {
+      "tag": "how_to_pay_fees",
+      "intent_id": 253,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How can I pay my tuition fees?",
+        "What payment methods are accepted?",
+        "Can I pay my fees online?",
+        "Where do I go to pay my bill?"
+      ],
+      "responses": [
+        "You can pay your tuition and fees online via credit card or e-check through the student portal. You can also pay in person at the Bursar's Office. Information about payment plans is also available on their website."
+      ]
+    },
+    {
+      "tag": "inquire_about_refund",
+      "intent_id": 254,
+      "category": "Finance & Administration",
+      "patterns": [
+        "What is the university's refund policy?",
+        "If I drop a class, will I get a refund?",
+        "How do I get a tuition refund?",
+        "Check my refund status."
+      ],
+      "responses": [
+        "The tuition refund policy depends on when you withdraw from a course. A full schedule of refund percentages and dates is available on the Bursar's Office website. Refunds are typically processed back to the original method of payment."
+      ]
+    },
+    {
+      "tag": "apply_for_financial_aid",
+      "intent_id": 255,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How do I apply for financial aid?",
+        "What is the deadline for FAFSA?",
+        "I need help with my financial aid application.",
+        "Where can I find financial aid forms?"
+      ],
+      "responses": [
+        "To apply for financial aid, you must complete the Free Application for Federal Student Aid (FAFSA). Our school code is [Code]. The Financial Aid Office website has step-by-step instructions and important deadlines."
+      ]
+    },
+    {
+      "tag": "get_id_card",
+      "intent_id": 256,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How do I get my student ID card?",
+        "Where is the ID card office?",
+        "I lost my ID card, how do I get a new one?",
+        "What do I need to get my student ID?"
+      ],
+      "responses": [
+        "You can get your student ID card at the Card Office, located in the Student Center. You will need to show a government-issued photo ID. There is a replacement fee for lost cards."
+      ]
+    },
+    {
+      "tag": "find_admin_forms",
+      "intent_id": 257,
+      "category": "Finance & Administration",
+      "patterns": [
+        "Where can I find the course withdrawal form?",
+        "I need a form from the registrar's office.",
+        "Looking for the financial aid appeal form.",
+        "Download administrative forms."
+      ],
+      "responses": [
+        "Most administrative forms from offices like the Registrar, Financial Aid, and Bursar are available for download on their respective websites. You can usually find a 'Forms' section."
+      ]
+    },
+    {
+      "tag": "check_financial_aid_status",
+      "intent_id": 258,
+      "category": "Finance & Administration",
+      "patterns": [
+        "What is the status of my financial aid?",
+        "Has my financial aid been awarded?",
+        "Why haven't I received my financial aid package?",
+        "View my financial aid award."
+      ],
+      "responses": [
+        "You can check the status of your financial aid application and view your award letter on the student portal. If documents are missing, they will be listed there as well."
+      ]
+    },
+    {
+      "tag": "contact_bursars_office",
+      "intent_id": 259,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How do I contact the Bursar's office?",
+        "I have a question about my bill.",
+        "What are the student accounts office hours?",
+        "Phone number for the billing department."
+      ],
+      "responses": [
+        "You can contact the Bursar's Office (or Student Accounts) at (123) 555-0102 or by email at bursar@university.edu. Their office is located in the main administration building."
+      ]
+    },
+    {
+      "tag": "setup_payment_plan",
+      "intent_id": 260,
+      "category": "Finance & Administration",
+      "patterns": [
+        "Can I set up a payment plan for my tuition?",
+        "Are there tuition installment plans available?",
+        "How do I enroll in a payment plan?",
+        "Information about monthly tuition payments."
+      ],
+      "responses": [
+        "Yes, the university offers a tuition payment plan that allows you to pay your balance in monthly installments. You can enroll in the plan through the student portal. An enrollment fee may apply."
+      ]
+    },
+    {
+      "tag": "get_tax_form_1098T",
+      "intent_id": 261,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How do I get my 1098-T form for taxes?",
+        "Where can I find my tuition tax statement?",
+        "When will the 1098-T be available?",
+        "I need my 1098-T."
+      ],
+      "responses": [
+        "The 1098-T form is made available electronically through the student portal by the end of January each year. You can consent to electronic delivery and download your form there."
+      ]
+    },
+    {
+      "tag": "add_money_to_student_card",
+      "intent_id": 262,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How do I add money to my student ID card?",
+        "I need to add funds to my campus cash account.",
+        "Where can I put money on my card for printing?",
+        "Add dining dollars."
+      ],
+      "responses": [
+        "You can add funds to your student ID card online through the card services portal, or at one of the cash-to-card machines located in the library and Student Center."
+      ]
+    },
+    {
+      "tag": "dispute_a_charge",
+      "intent_id": 263,
+      "category": "Finance & Administration",
+      "patterns": [
+        "I think there is a mistake on my bill.",
+        "How do I dispute a charge on my student account?",
+        "I was charged for a fee I don't understand.",
+        "Who do I talk to about an incorrect charge?"
+      ],
+      "responses": [
+        "If you believe there is an error on your student account statement, please contact the Bursar's Office immediately to discuss the charge. They will help you investigate the issue."
+      ]
+    },
+    {
+      "tag": "check_account_balance",
+      "intent_id": 264,
+      "category": "Finance & Administration",
+      "patterns": [
+        "What is my current account balance?",
+        "How much do I owe the university?",
+        "Show me my student bill.",
+        "I need to see my statement of account."
+      ],
+      "responses": [
+        "You can view your real-time account balance, see all charges and payments, and download your official statement by logging into the student portal and navigating to the 'Student Accounts' or 'Billing' section."
+      ]
+    },
+    {
+      "tag": "contact_financial_aid_office",
+      "intent_id": 265,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How can I contact the financial aid office?",
+        "I need to speak with a financial aid counselor.",
+        "What are the financial aid office hours?",
+        "Where is the financial aid office located?"
+      ],
+      "responses": [
+        "The Financial Aid Office is located in the administration building. You can reach them by phone at (123) 555-0107 or by email at finaid@university.edu. They also offer drop-in hours and scheduled appointments."
+      ]
+    },
+    {
+      "tag": "apply_for_emergency_loan",
+      "intent_id": 266,
+      "category": "Finance & Administration",
+      "patterns": [
+        "Does the university offer emergency loans for students?",
+        "I'm having a financial emergency, what can I do?",
+        "How to apply for a short-term student loan.",
+        "I need emergency financial assistance."
+      ],
+      "responses": [
+        "The Dean of Students office manages a short-term emergency loan fund for students facing unexpected financial hardship. Please schedule an appointment with them to discuss your situation and see if you are eligible."
+      ]
+    },
+    {
+      "tag": "verify_enrollment",
+      "intent_id": 267,
+      "category": "Finance & Administration",
+      "patterns": [
+        "I need proof that I am a student.",
+        "How do I get an enrollment verification certificate?",
+        "My insurance company needs proof of enrollment.",
+        "Where can I get a letter confirming my student status?"
+      ],
+      "responses": [
+        "You can instantly generate and print an official Enrollment Verification Certificate through the National Student Clearinghouse. A link is provided on the Registrar's Office website."
+      ]
+    },
+    {
+      "tag": "ask_about_work_study",
+      "intent_id": 268,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How does the Federal Work-Study program work?",
+        "I was awarded work-study, what do I do now?",
+        "Where can I find a work-study job?",
+        "What is work-study?"
+      ],
+      "responses": [
+        "Federal Work-Study is a form of financial aid that you earn through a part-time job. If you were awarded work-study, you can search for eligible on-campus jobs on the Career Services job board. The Financial Aid Office can provide more details."
+      ]
+    },
+    {
+      "tag": "manage_authorized_users",
+      "intent_id": 269,
+      "category": "Finance & Administration",
+      "patterns": [
+        "How can I give my parents access to my student bill?",
+        "I want to set up my mom as an authorized user to pay my tuition.",
+        "How do I add someone to my financial account?",
+        "Letting parents view my bill."
+      ],
+      "responses": [
+        "You can designate parents or others as 'Authorized Users' in the billing section of the student portal. This will allow them to view your bill and make payments on your behalf. They will have their own separate login."
+      ]
+    },
+    {
+      "tag": "get_notarization_services",
+      "intent_id": 270,
+      "category": "Finance & Administration",
+      "patterns": [
+        "Does the university have a notary public?",
+        "I need to get a document notarized on campus.",
+        "Where can I find a notary?",
+        "Are notary services free for students?"
+      ],
+      "responses": [
+        "Yes, several offices on campus have licensed notary publics available, often in the administration building or student legal services. It's best to call ahead to confirm availability. Some offices may offer the service for free to students."
+      ]
+    },
+    {
+      "tag": "report_wifi_issue",
+      "intent_id": 301,
+      "category": "Technology & Support",
+      "patterns": [
+        "The Wi-Fi is not working in the library.",
+        "I can't connect to the campus Wi-Fi.",
+        "How do I connect my laptop to the Wi-Fi?",
+        "The internet is very slow."
+      ],
+      "responses": [
+        "To connect to the campus Wi-Fi, select the '[NetworkName]' network and log in with your university username and password. If you are experiencing issues, you can report a problem or get help at the IT Help Desk website."
+      ]
+    },
+    {
+      "tag": "portal_login_help",
+      "intent_id": 302,
+      "category": "Technology & Support",
+      "patterns": [
+        "I can't log in to the student portal.",
+        "I forgot my portal password.",
+        "How do I reset my password?",
+        "My student account is locked."
+      ],
+      "responses": [
+        "If you're having trouble logging in, please try the 'Forgot Password' link on the portal login page. If you are still unable to access your account, please contact the IT Help Desk for assistance."
+      ]
+    },
+    {
+      "tag": "email_setup",
+      "intent_id": 303,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I set up my student email on my phone?",
+        "I can't access my university email.",
+        "What is my student email address?",
+        "Help with Outlook/Gmail setup."
+      ],
+      "responses": [
+        "Your student email address is [format, e.g., username@university.edu]. The IT Services website has step-by-step guides for setting up your email on various devices, including phones and laptops."
+      ]
+    },
+    {
+      "tag": "get_free_software",
+      "intent_id": 304,
+      "category": "Technology & Support",
+      "patterns": [
+        "Do students get free Microsoft Office?",
+        "Where can I download free software?",
+        "Is there any software available for students?",
+        "How to get Adobe Creative Cloud."
+      ],
+      "responses": [
+        "Yes, as a student, you have access to a range of free and discounted software, including Microsoft Office 365. You can find a list of available software and download links on the IT Services website."
+      ]
+    },
+    {
+      "tag": "contact_it_help_desk",
+      "intent_id": 305,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I contact the IT Help Desk?",
+        "I need technical support.",
+        "What are the Help Desk hours?",
+        "Where is the IT support office?"
+      ],
+      "responses": [
+        "You can contact the IT Help Desk via phone at (123) 555-0103, by email at helpdesk@university.edu, or by visiting their walk-in location in the main library. Their hours are posted on the IT Services website."
+      ]
+    },
+    {
+      "tag": "use_campus_printers",
+      "intent_id": 306,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I print on campus?",
+        "Where are the student printers located?",
+        "How much does it cost to print?",
+        "I need to add money to my printing account."
+      ],
+      "responses": [
+        "You can print from any campus computer or your own device to printers located in the library, computer labs, and other locations. You can add funds to your printing account online through the printing portal."
+      ]
+    },
+    {
+      "tag": "report_classroom_tech_issue",
+      "intent_id": 307,
+      "category": "Technology & Support",
+      "patterns": [
+        "The projector in my classroom isn't working.",
+        "I can't get the sound to work in this lecture hall.",
+        "The computer in room 201 is broken.",
+        "Who do I call for classroom tech support?"
+      ],
+      "responses": [
+        "For immediate classroom technology issues, please call the Classroom Support hotline at (123) 555-0104. Please provide the building and room number."
+      ]
+    },
+    {
+      "tag": "access_computer_labs",
+      "intent_id": 308,
+      "category": "Technology & Support",
+      "patterns": [
+        "Where are the computer labs on campus?",
+        "What are the hours for the computer lab?",
+        "What software is available in the computer labs?",
+        "Can I use a Mac computer on campus?"
+      ],
+      "responses": [
+        "Computer labs are available for student use in several locations, including the library and the engineering building. You can find a full list of labs, their hours, and the software they offer on the IT Services website."
+      ]
+    },
+    {
+      "tag": "request_loaner_equipment",
+      "intent_id": 309,
+      "category": "Technology & Support",
+      "patterns": [
+        "Can I borrow a laptop from the university?",
+        "My computer broke, can I get a loaner?",
+        "Where can I rent a projector for a presentation?",
+        "Equipment checkout services."
+      ],
+      "responses": [
+        "The library offers short-term loans of equipment like laptops, chargers, and cameras. Visit the library's main circulation desk to check for availability."
+      ]
+    },
+    {
+      "tag": "understand_cybersecurity_best_practices",
+      "intent_id": 310,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I protect myself from phishing emails?",
+        "What are the university's password requirements?",
+        "Tips for staying safe online.",
+        "I received a suspicious email, what should I do?"
+      ],
+      "responses": [
+        "It's crucial to be aware of cybersecurity threats. The IT Services website has a section on security with tips on creating strong passwords, recognizing phishing scams, and more. If you receive a suspicious email, please forward it to phishing@university.edu."
+      ]
+    },
+    {
+      "tag": "connect_gaming_console",
+      "intent_id": 311,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I connect my PlayStation to the dorm Wi-Fi?",
+        "Can I use my Xbox on the campus network?",
+        "Registering my Nintendo Switch for internet access.",
+        "Help with connecting a gaming console."
+      ],
+      "responses": [
+        "To connect a gaming console or smart device, you must first register its MAC address with IT Services. Instructions for finding the MAC address and registering your device are on the IT website under 'Device Registration'."
+      ]
+    },
+    {
+      "tag": "get_vpn_access",
+      "intent_id": 312,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I access university resources from off-campus?",
+        "I need to set up the VPN.",
+        "What is a VPN and why do I need it?",
+        "Download the university VPN client."
+      ],
+      "responses": [
+        "To securely access certain university resources from off-campus, you will need to use the Virtual Private Network (VPN). You can download the VPN client and find setup instructions on the IT Services website."
+      ]
+    },
+    {
+      "tag": "troubleshoot_lms_issue",
+      "intent_id": 313,
+      "category": "Technology & Support",
+      "patterns": [
+        "I can't see my course in Canvas.",
+        "An assignment won't upload to Blackboard.",
+        "I'm having a technical issue with the online learning system.",
+        "The quiz feature is not working in the LMS."
+      ],
+      "responses": [
+        "If you're having trouble with the Learning Management System (LMS), first try clearing your browser's cache and cookies. If the problem persists, the IT Help Desk has a dedicated support team for the LMS that can assist you."
+      ]
+    },
+    {
+      "tag": "get_computer_recommendations",
+      "intent_id": 314,
+      "category": "Technology & Support",
+      "patterns": [
+        "What kind of computer should I buy for college?",
+        "Are there any student discounts on laptops?",
+        "What are the computer requirements for the engineering program?",
+        "Mac or PC for my major?"
+      ],
+      "responses": [
+        "The university has general computer recommendations on the IT website. Some majors, like engineering or graphic design, may have more specific requirements. You can also find links to educational discounts from manufacturers like Apple and Dell."
+      ]
+    },
+    {
+      "tag": "set_up_2fa",
+      "intent_id": 315,
+      "category": "Technology & Support",
+      "patterns": [
+        "How do I set up two-factor authentication?",
+        "I need help with Duo Mobile.",
+        "What is 2FA?",
+        "My multi-factor authentication is not working."
+      ],
+      "responses": [
+        "Two-factor authentication (2FA) adds an extra layer of security to your account. You can enroll and manage your devices for 2FA through the university's security portal. Step-by-step instructions are available on the IT website."
+      ]
+    },
+    {
+      "tag": "schedule_counseling_appointment",
+      "intent_id": 351,
+      "category": "Student Welfare",
+      "patterns": [
+        "How do I make a counseling appointment?",
+        "I need to talk to a counselor.",
+        "Are counseling services confidential?",
+        "Where is the counseling center?"
+      ],
+      "responses": [
+        "The Counseling and Psychological Services (CAPS) center offers confidential support. You can schedule an appointment by calling them at (123) 555-0105 or visiting their office in the Health and Wellness building."
+      ]
+    },
+    {
+      "tag": "find_health_services",
+      "intent_id": 352,
+      "category": "Student Welfare",
+      "patterns": [
+        "Where is the student health center?",
+        "How do I see a doctor on campus?",
+        "What are the health center hours?",
+        "Do I need health insurance?"
+      ],
+      "responses": [
+        "The Student Health Center provides medical services to students. You can make an appointment online or by phone. All students are required to have health insurance, either through the university's plan or a comparable private plan."
+      ]
+    },
+    {
+      "tag": "apply_for_leave_of_absence",
+      "intent_id": 353,
+      "category": "Student Welfare",
+      "patterns": [
+        "How do I take a semester off?",
+        "I need to apply for a medical leave of absence.",
+        "What is the process for taking a leave from the university?",
+        "Withdrawing from the semester."
+      ],
+      "responses": [
+        "If you need to take a leave of absence for personal or medical reasons, you should speak with your academic advisor and contact the Dean of Students office. They will guide you through the process and necessary paperwork."
+      ]
+    },
+    {
+      "tag": "register_with_disability_services",
+      "intent_id": 354,
+      "category": "Student Welfare",
+      "patterns": [
+        "How do I get academic accommodations?",
+        "I have a disability and need support.",
+        "Where is the office for disability services?",
+        "How to request extra time on exams."
+      ],
+      "responses": [
+        "The Disability Services office works with students to provide reasonable accommodations. Please schedule a meeting with them to discuss your needs and provide the necessary documentation. All services are confidential."
+      ]
+    },
+    {
+      "tag": "report_harassment_or_discrimination",
+      "intent_id": 355,
+      "category": "Student Welfare",
+      "patterns": [
+        "I want to report an incident of harassment.",
+        "Where can I file a discrimination complaint?",
+        "Who can I talk to about a problem with another student?",
+        "What is the university's policy on bullying?"
+      ],
+      "responses": [
+        "We are committed to a safe and inclusive environment. You can report any incidents of harassment, discrimination, or misconduct to the Title IX office or the Dean of Students. All reports are taken seriously and handled with discretion."
+      ]
+    },
+    {
+      "tag": "get_emergency_contact_info",
+      "intent_id": 356,
+      "category": "Student Welfare",
+      "patterns": [
+        "What is the number for campus police?",
+        "Who do I call in an emergency?",
+        "I need the 24-hour crisis hotline.",
+        "Emergency phone numbers."
+      ],
+      "responses": [
+        "For any on-campus emergency, please call Campus Safety at (123) 555-9111. For mental health crises, the 24/7 crisis hotline is available at (123) 555-HELP."
+      ]
+    },
+    {
+      "tag": "find_wellness_workshops",
+      "intent_id": 357,
+      "category": "Student Welfare",
+      "patterns": [
+        "Are there any stress management workshops?",
+        "I'm looking for workshops on mental health.",
+        "Where can I find information on wellness events?",
+        "Yoga and meditation sessions on campus."
+      ],
+      "responses": [
+        "The Health and Wellness Center offers a variety of workshops throughout the semester on topics like stress management, mindfulness, and healthy eating. You can find their schedule of events on their website."
+      ]
+    },
+    {
+      "tag": "ask_about_student_health_insurance",
+      "intent_id": 358,
+      "category": "Student Welfare",
+      "patterns": [
+        "How do I enroll in the student health insurance plan?",
+        "Can I waive the university's health insurance?",
+        "What does the student health plan cover?",
+        "Information on the student insurance policy."
+      ],
+      "responses": [
+        "Information about the student health insurance plan, including coverage details, costs, and the waiver process, can be found on the Student Health Services website."
+      ]
+    },
+    {
+      "tag": "file_academic_grievance",
+      "intent_id": 359,
+      "category": "Student Welfare",
+      "patterns": [
+        "I want to file a formal complaint against a professor.",
+        "What is the academic grievance procedure?",
+        "How do I resolve a conflict with an instructor?",
+        "Who do I talk to if I have an issue in a class?"
+      ],
+      "responses": [
+        "The academic grievance procedure is outlined in the student handbook. The first step is typically to try to resolve the issue directly with the instructor. If that is not possible or successful, you should contact the department head. The Dean of Students office can also provide guidance."
+      ]
+    },
+    {
+      "tag": "get_info_on_student_advocacy",
+      "intent_id": 360,
+      "category": "Student Welfare",
+      "patterns": [
+        "Is there a student advocate on campus?",
+        "I need help navigating university policies.",
+        "Who can help me with an academic appeal?",
+        "I need someone to support me in a meeting with the dean."
+      ],
+      "responses": [
+        "The Student Advocacy Center, often located within the Dean of Students office, provides confidential support and guidance to students who are navigating complex university policies and procedures."
+      ]
+    },
+    {
+      "tag": "contact_dean_of_students",
+      "intent_id": 361,
+      "category": "Student Welfare",
+      "patterns": [
+        "How do I contact the Dean of Students?",
+        "I need to schedule a meeting with the Dean of Students.",
+        "Where is the Dean of Students office?",
+        "I'm having a personal issue and need help."
+      ],
+      "responses": [
+        "The Dean of Students office is a central resource for student support. You can find their contact information and location on the university website. They can help with a wide range of issues, from personal crises to navigating university policies."
+      ]
+    },
+    {
+      "tag": "report_a_safety_concern",
+      "intent_id": 362,
+      "category": "Student Welfare",
+      "patterns": [
+        "I want to report a safety concern on campus.",
+        "There's a broken light on the walkway.",
+        "I feel unsafe in a certain area of campus.",
+        "How do I report a potential hazard?"
+      ],
+      "responses": [
+        "If you see a safety concern like poor lighting, a broken handrail, or anything else, please report it to Campus Safety or Facilities Management. For immediate, life-threatening concerns, always call the emergency line."
+      ]
+    },
+    {
+      "tag": "find_support_groups",
+      "intent_id": 363,
+      "category": "Student Welfare",
+      "patterns": [
+        "Are there any student support groups on campus?",
+        "I'm looking for a support group for anxiety.",
+        "Where can I find group counseling sessions?",
+        "Peer support groups."
+      ],
+      "responses": [
+        "The Counseling Center (CAPS) runs several confidential support and therapy groups each semester on various topics. You can find a list of current groups and how to join on their website."
+      ]
+    },
+    {
+      "tag": "get_info_on_nutrition_services",
+      "intent_id": 364,
+      "category": "Student Welfare",
+      "patterns": [
+        "Does the university have a nutritionist?",
+        "I have dietary restrictions, who can I talk to?",
+        "I need help with healthy eating.",
+        "How to make an appointment with a dietitian."
+      ],
+      "responses": [
+        "Yes, a registered dietitian is available through Student Health Services and Dining Services to provide free nutritional counseling for students. You can make a confidential appointment to discuss healthy eating, allergies, or any dietary concerns."
+      ]
+    },
+    {
+      "tag": "get_info_on_student_legal_services",
+      "intent_id": 365,
+      "category": "Student Welfare",
+      "patterns": [
+        "Does the university offer legal help for students?",
+        "I need to talk to a lawyer about my lease.",
+        "Where can I find student legal services?",
+        "Is there free legal advice for students?"
+      ],
+      "responses": [
+        "Yes, Student Legal Services provides free and confidential legal advice and representation to students on a variety of issues. You can find their contact information and schedule an appointment on their website."
+      ]
+    },
+    {
+      "tag": "find_placement_help",
+      "intent_id": 401,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "How can I get help with job placements?",
+        "Does the university help students find jobs?",
+        "I'm graduating and need help with my job search.",
+        "Tell me about campus placements."
+      ],
+      "responses": [
+        "The Career Services office provides comprehensive support for your job search, including job fairs, on-campus interviews, and access to an exclusive job board. Please schedule an appointment with a career advisor to get started."
+      ]
+    },
+    {
+      "tag": "get_resume_support",
+      "intent_id": 402,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "Can someone review my resume?",
+        "I need help writing my CV.",
+        "Are there resume templates available?",
+        "How to make a good resume."
+      ],
+      "responses": [
+        "Yes, Career Services offers resume and cover letter reviews. You can schedule an appointment with a career advisor or attend one of their drop-in sessions. They also have helpful resources and templates on their website."
+      ]
+    },
+    {
+      "tag": "find_internships",
+      "intent_id": 403,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "How do I find an internship?",
+        "Where are internships posted?",
+        "Can I get academic credit for an internship?",
+        "Summer internship opportunities."
+      ],
+      "responses": [
+        "Career Services manages an internship database with listings from various employers. They also host internship fairs and can provide guidance on how to secure an internship and potentially earn academic credit for it."
+      ]
+    },
+    {
+      "tag": "schedule_mock_interview",
+      "intent_id": 404,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "Can I do a practice interview?",
+        "I want to schedule a mock interview.",
+        "How can I prepare for a job interview?",
+        "Help with interview skills."
+      ],
+      "responses": [
+        "Career Services offers mock interviews to help you practice and receive feedback. You can schedule a session with a career advisor through their online scheduling system."
+      ]
+    },
+    {
+      "tag": "access_alumni_network",
+      "intent_id": 405,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "How do I connect with university alumni?",
+        "Is there an alumni mentoring program?",
+        "How can I find alumni who work in my field?",
+        "Join the alumni network."
+      ],
+      "responses": [
+        "You can connect with our global alumni network through the official Alumni Association website. They offer a mentoring platform, networking events, and an online directory to help you make connections."
+      ]
+    },
+    {
+      "tag": "find_career_fairs",
+      "intent_id": 406,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "When is the next career fair?",
+        "Which companies will be at the job fair?",
+        "How do I register for the career fair?",
+        "List of upcoming career events."
+      ],
+      "responses": [
+        "Career Services hosts several career fairs each semester. You can find the schedule, a list of attending employers, and registration information on the Career Services website."
+      ]
+    },
+    {
+      "tag": "get_alumni_benefits",
+      "intent_id": 407,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "What are the benefits of being an alumnus?",
+        "Do alumni get discounts?",
+        "How do I get an alumni ID card?",
+        "Alumni services."
+      ],
+      "responses": [
+        "As an alumnus, you have access to a range of benefits, including continued career services support, library access, and discounts on various services. Visit the Alumni Association website for a full list of benefits."
+      ]
+    },
+    {
+      "tag": "contact_career_services",
+      "intent_id": 408,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "How do I contact Career Services?",
+        "What are the career office hours?",
+        "Where is the career center located?",
+        "I need to make an appointment with a career advisor."
+      ],
+      "responses": [
+        "The Career Services office is located in the Student Success Center. You can find their contact information, hours, and appointment scheduling link on their website."
+      ]
+    },
+    {
+      "tag": "explore_career_options",
+      "intent_id": 409,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "I'm not sure what I want to do with my major.",
+        "Can you help me explore career paths?",
+        "What jobs can I get with a degree in psychology?",
+        "Career assessment tools."
+      ],
+      "responses": [
+        "Career Services provides career counseling and assessment tools to help you explore career options that align with your interests, skills, and major. We recommend scheduling an appointment with a career advisor to discuss your goals."
+      ]
+    },
+    {
+      "tag": "get_info_on_graduate_school",
+      "intent_id": 410,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "I need help applying to graduate school.",
+        "How do I prepare for the GRE?",
+        "Can you help me with my personal statement for grad school?",
+        "Information about post-graduate studies."
+      ],
+      "responses": [
+        "Career Services offers resources and advising for students considering graduate school. They can help with application strategies, personal statement reviews, and test preparation resources."
+      ]
+    },
+    {
+      "tag": "find_on_campus_recruiting_events",
+      "intent_id": 411,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "Are there companies that recruit on campus?",
+        "How do I sign up for on-campus interviews?",
+        "Which employers are holding information sessions?",
+        "On-campus recruiting schedule."
+      ],
+      "responses": [
+        "Many top employers recruit directly on our campus. You can find a schedule of employer information sessions and on-campus interviews, and apply for opportunities, through the Career Services job portal."
+      ]
+    },
+    {
+      "tag": "get_cover_letter_help",
+      "intent_id": 412,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "Can someone help me with my cover letter?",
+        "How do I write a cover letter?",
+        "I need my cover letter reviewed.",
+        "Cover letter examples."
+      ],
+      "responses": [
+        "Absolutely. Career Services advisors can help you write and refine your cover letter. You can schedule a review appointment or find helpful guides and samples on their website."
+      ]
+    },
+    {
+      "tag": "access_career_job_board",
+      "intent_id": 413,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "Where can I find job postings?",
+        "Is there a university job board for students?",
+        "I need the link to Handshake/Symplicity.",
+        "How to find jobs for students."
+      ],
+      "responses": [
+        "The university uses [Platform Name, e.g., Handshake] as its official job board. You can log in with your student credentials to find exclusive job and internship postings, register for events, and schedule advising appointments."
+      ]
+    },
+    {
+      "tag": "update_alumni_information",
+      "intent_id": 414,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "I'm an alum and I need to update my address.",
+        "How do I update my contact information with the alumni association?",
+        "I changed jobs, how do I update my alumni profile?",
+        "Keep my alumni record up to date."
+      ],
+      "responses": [
+        "Thank you for staying in touch! You can update your contact and employment information through the alumni portal on the Alumni Association website. This helps us keep you informed about relevant events and news."
+      ]
+    },
+    {
+      "tag": "donate_to_university",
+      "intent_id": 415,
+      "category": "Career & Alumni Relations",
+      "patterns": [
+        "How can I make a donation to the university?",
+        "I want to give back to my alma mater.",
+        "Where can I find information about donating?",
+        "Support the university financially."
+      ],
+      "responses": [
+        "We appreciate your support! You can make a gift online through the university's official Giving website. You can choose to support a specific school, department, or scholarship fund."
+      ]
+    },
+    {
+      "tag": "find_seminars",
+      "intent_id": 451,
+      "category": "Events & Communication",
+      "patterns": [
+        "Are there any upcoming seminars?",
+        "I'm looking for a seminar on artificial intelligence.",
+        "Where can I find a list of guest lectures?",
+        "How to register for a seminar."
+      ],
+      "responses": [
+        "A list of upcoming seminars, workshops, and guest lectures is available on the university's main events calendar. You can filter by category to find events related to your interests."
+      ]
+    },
+    {
+      "tag": "inquire_about_cultural_week",
+      "intent_id": 452,
+      "category": "Events & Communication",
+      "patterns": [
+        "When is cultural week?",
+        "What events are planned for the cultural festival?",
+        "I want to participate in the international festival.",
+        "Schedule for cultural week."
+      ],
+      "responses": [
+        "Our annual Cultural Week is a celebration of the diversity on our campus! It is typically held in [Month]. The full schedule of events, including performances, food fairs, and presentations, will be posted on the Student Activities website."
+      ]
+    },
+    {
+      "tag": "check_university_announcements",
+      "intent_id": 453,
+      "category": "Events & Communication",
+      "patterns": [
+        "Where can I find university announcements?",
+        "What are the latest campus updates?",
+        "Is there a campus newsletter?",
+        "Important notices for students."
+      ],
+      "responses": [
+        "Official university announcements are posted on the homepage of the university website and are often sent to your student email. You can also check the news section of the student portal."
+      ]
+    },
+    {
+      "tag": "find_holiday_calendar",
+      "intent_id": 454,
+      "category": "Events & Communication",
+      "patterns": [
+        "When is spring break?",
+        "Is the university closed for the holiday?",
+        "Show me the list of university holidays.",
+        "What is the holiday schedule?"
+      ],
+      "responses": [
+        "The official holiday schedule, including semester breaks and days the university is closed, is part of the academic calendar, which can be found on the Registrar's Office website."
+      ]
+    },
+    {
+      "tag": "contact_university_communications",
+      "intent_id": 455,
+      "category": "Events & Communication",
+      "patterns": [
+        "I have a story for the university newspaper.",
+        "How do I contact the media relations office?",
+        "Who manages the university's social media?",
+        "I want to submit an event to the campus calendar."
+      ],
+      "responses": [
+        "The Office of University Communications manages media relations, the university website, and official social media channels. You can find their contact information and a form to submit news and events on their website."
+      ]
+    },
+    {
+      "tag": "get_commencement_info",
+      "intent_id": 456,
+      "category": "Events & Communication",
+      "patterns": [
+        "When is the graduation ceremony?",
+        "Where can I find information about commencement?",
+        "How many tickets do I get for graduation?",
+        "What is the schedule for commencement day?"
+      ],
+      "responses": [
+        "All information about the commencement ceremony, including the date, time, location, ticketing, and guest information, is available on the dedicated commencement website."
+      ]
+    },
+    {
+      "tag": "find_student_newspaper",
+      "intent_id": 457,
+      "category": "Events & Communication",
+      "patterns": [
+        "Where can I read the student newspaper?",
+        "Is the campus newspaper online?",
+        "How can I join the newspaper staff?",
+        "I want to read the latest issue of the university paper."
+      ],
+      "responses": [
+        "You can read the student newspaper, '[Newspaper Name]', both in print at various locations around campus and online at their official website. Information on how to get involved is also on their site."
+      ]
+    },
+    {
+      "tag": "get_weather_closure_info",
+      "intent_id": 458,
+      "category": "Events & Communication",
+      "patterns": [
+        "Is the campus closed due to snow?",
+        "How will I be notified if classes are canceled?",
+        "What is the inclement weather policy?",
+        "Check campus closure status."
+      ],
+      "responses": [
+        "In the event of a campus closure or class cancellation due to weather, an alert will be sent out via the university's emergency notification system (text and email). The information will also be posted on the university homepage and official social media channels."
+      ]
+    },
+    {
+      "tag": "find_university_social_media",
+      "intent_id": 459,
+      "category": "Events & Communication",
+      "patterns": [
+        "Does the university have an Instagram account?",
+        "What is the official Facebook page?",
+        "Where can I find the university on social media?",
+        "Link to the university's Twitter."
+      ],
+      "responses": [
+        "Yes, you can follow us on all major social media platforms! You can find links to our official Facebook, Instagram, Twitter, and LinkedIn pages at the bottom of the university's homepage."
+      ]
+    },
+    {
+      "tag": "submit_event_to_calendar",
+      "intent_id": 460,
+      "category": "Events & Communication",
+      "patterns": [
+        "How do I add my club's event to the campus calendar?",
+        "I want to promote an event on campus.",
+        "Where can I submit an event for approval?",
+        "Publicize a student organization event."
+      ],
+      "responses": [
+        "Student organizations and departments can submit events to the main campus calendar through the online submission form, which is managed by the University Communications office. Please allow a few business days for review and posting."
+      ]
+    },
+    {
+      "tag": "find_tech_week_info",
+      "intent_id": 461,
+      "category": "Events & Communication",
+      "patterns": [
+        "When is the university's Tech Week?",
+        "What workshops are happening during Tech Week?",
+        "Tell me about the annual technology fair.",
+        "How to participate in the hackathon."
+      ],
+      "responses": [
+        "Our annual Tech Week, featuring guest speakers, workshops, and a hackathon, is scheduled for [Month]. You can find the full schedule and registration details on the College of Engineering's website."
+      ]
+    },
+    {
+      "tag": "get_homecoming_schedule",
+      "intent_id": 462,
+      "category": "Events & Communication",
+      "patterns": [
+        "When is Homecoming?",
+        "What is the schedule for Homecoming week?",
+        "Tell me about the Homecoming parade and football game.",
+        "Events for alumni during Homecoming."
+      ],
+      "responses": [
+        "Homecoming is one of our biggest traditions! It's happening the week of [Date]. A full schedule of events for students and alumni, including the parade, bonfire, and tailgate, is available on the Alumni Association website."
+      ]
+    },
+    {
+      "tag": "find_campus_radio_station",
+      "intent_id": 463,
+      "category": "Events & Communication",
+      "patterns": [
+        "Does the university have a radio station?",
+        "How can I listen to the campus radio?",
+        "I want to be a DJ on the student radio.",
+        "What is the frequency for the college radio station?"
+      ],
+      "responses": [
+        "Yes, our student-run radio station is [Station Name], broadcasting on [Frequency] FM and streaming online. Visit their website to listen live or learn how you can get involved as a DJ or volunteer."
+      ]
+    },
+    {
+      "tag": "subscribe_to_campus_notifications",
+      "intent_id": 464,
+      "category": "Events & Communication",
+      "patterns": [
+        "How do I sign up for emergency text alerts?",
+        "I'm not receiving campus alert messages.",
+        "How to manage my notification preferences.",
+        "Make sure I'm subscribed to emergency notifications."
+      ],
+      "responses": [
+        "You can manage your contact information and subscriptions for the university's emergency alert system through the student portal. It is crucial to keep your mobile number updated to receive timely notifications."
+      ]
+    },
+    {
+      "tag": "find_information_sessions",
+      "intent_id": 465,
+      "category": "Events & Communication",
+      "patterns": [
+        "Are there any information sessions for the MBA program?",
+        "I want to learn more about the nursing program.",
+        "When is the next study abroad info session?",
+        "Schedule of academic information sessions."
+      ],
+      "responses": [
+        "Many academic departments and programs host information sessions for prospective and current students. These are often listed on the department's website and the main university events calendar."
+      ]
+    }
+  ]
+}

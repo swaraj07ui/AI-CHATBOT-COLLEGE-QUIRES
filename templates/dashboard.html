@@ -1,0 +1,47 @@
+// Add this to your dashboard.html script section
+document.querySelector('[data-tab="voice-settings"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Remove active class from all links
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+    
+    // Add active class to clicked link
+    this.classList.add('active');
+    
+    // Hide all tabs
+    document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+    
+    // Show selected tab
+    document.getElementById('voice-settings-tab').classList.remove('hidden');
+});
+
+// TTS Settings
+document.getElementById('speech-rate').addEventListener('input', function() {
+    document.getElementById('rate-value').textContent = this.value;
+});
+
+document.getElementById('speech-volume').addEventListener('input', function() {
+    document.getElementById('volume-value').textContent = Math.round(this.value * 100);
+});
+
+document.getElementById('test-tts-btn').addEventListener('click', function() {
+    const text = "This is a test of the text-to-speech system. How do I sound?";
+    // In a real implementation, this would call an API to test the voice
+    alert(`Testing voice with settings: Rate=${document.getElementById('speech-rate').value}, Volume=${document.getElementById('speech-volume').value}`);
+});
+
+document.getElementById('tts-settings-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('TTS settings saved successfully!');
+});
+
+// STT Settings
+document.getElementById('test-stt-btn').addEventListener('click', function() {
+    // In a real implementation, this would test the microphone
+    alert('Microphone test initiated. Please speak...');
+});
+
+document.getElementById('stt-settings-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Speech recognition settings saved successfully!');
+});
